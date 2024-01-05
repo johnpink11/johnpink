@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>飞机大战</title>
+  <style>
+    #gameArea {
+      width: 600px;
+      height: 400px;
+      border: 1px solid black;
+      position: relative;
+    }
+    #player {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .enemy {
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      position: absolute;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="gameArea">
+  <div id="player"></div>
+</div>
+
+<script>
+  const gameArea = document.getElementById('gameArea');
+  const player = document.getElementById('player');
+  let score = 0;
+
+  function movePlayer(event) {
+    const x = event.clientX - gameArea.getBoundingClientRect().left;
+    player.style.left = `${x - player.clientWidth / 2}px`;
+  }
+
+  function createEnemy() {
+    const enemy = document.createElement('div');
+    enemy.classList.add('enemy');
+    enemy.style.left = `${Math.random() * (gameArea.clientWidth - 30)}px`;
+    gameArea.appendChild(enemy);
+
+    const moveEnemy = setInterval(() => {
+      const y = enemy.offsetTop;
+      if (y > gameArea.clientHeight) {
+        clearInterval(moveEnemy);
+        gameArea.removeChild(enemy);
+      } else {
+        enemy.style.top = `${y + 3}px`;
+        if (isCollide(player, enemy)) {
+          clearInterval(moveEnemy);
+          gameArea.removeChild(enemy);
+          endGame();
+        }
+      }
+    }, 20);
+  }
+
+  function isCollide(a, b) {
+    const aRect = a.getBoundingClientRect();
+    const bRect = b.getBoundingClientRect();
+
+    return !(
+      aRect.bottom < bRect.top ||
+      aRect.top > bRect.bottom ||
+      aRect.right < bRect.left ||
+      aRect.left > bRect.right
+    );
+  }
+
+  function endGame() {
+    alert(`游戏结束！得分: ${score}`);
+    score = 0;
+  }
+
+  gameArea.addEventListener('mousemove', movePlayer);
+
+  setInterval(() => {
+    createEnemy();
+    score++;
+  }, 1000);
+</script>
+
+</body>
+</html>
