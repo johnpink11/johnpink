@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>生日快乐</title>
+    <style>
+        @keyframes birthdayAnimation {
+            0%   { transform: scale(1); }
+            50%  { transform: scale(2.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .birthdayCake {
+            width: 400px;
+            height: 400px;
+            background-color: #FFD700; /*黄色*/
+            border-radius: 50%;
+            position: relative;
+            animation: birthdayAnimation 6s infinite alternate;
+        }
+        
+        .cakeTop {
+            width: inherit;
+            height: 200px;
+            background-color: #FFA500; /*橙色*/
+            position: absolute;
+            top: -100px;
+            left: 0;
+            z-index: 999;
+        }
+        
+        .cakeBottom {
+            width: inherit;
+            height: 200px;
+            background-color: #FFA500; /*橙色*/
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            z-index: 999;
+        }
+        
+        .happyBirthdayText {
+            font-size: 3em;
+            text-align: center;
+            color: white;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="birthdayCake"></div>
+    <div class="cakeTop"></div>
+    <div class="cakeBottom"></div>
+    
+    <p class="happyBirthdayText">HAPPY BIRTHDAY！</p>
+</body>
+</html>
