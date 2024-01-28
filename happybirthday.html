@@ -1040,7 +1040,18 @@ h1, h2, span {
 <div class="after"></div>
 </div>
 <h1>I love You</h1>
-<audio src="/Resources/Alittlesweet.mp3" autoplay loop></audio>
+<audio id="backgroundAudio" src="/Resources/Alittlesweet.mp3"  loop ></audio>
+
+<script>
+document.addEventListener("scroll", function() {
+    var audio = document.getElementById('backgroundAudio');
+    audio.play();
+    // 然后你可能需要移除滚动事件监听器，以免重复播放
+    document.removeEventListener("scroll", arguments.callee);
+});
+</script>
+
+
 <h2>Happy Birthday my dear Margie!</h2>
 <span>🎉</span>
 <div class="candle">
@@ -1048,6 +1059,7 @@ h1, h2, span {
 </div>
 <div class="cake"></div>
 <div class="plate"></div>
+
 
 </body>
 </html>
