@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello
-permalink: /about/
+permalink: /Hello/
 ---
 
 This is a test page.
