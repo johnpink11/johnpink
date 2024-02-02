@@ -1,5 +1,5 @@
 
-# HTML(*HyperText Markup Language*，超文本编辑语言), 是一种用来告诉浏览器如何组织页面的*标记语言*
+HTML(*HyperText Markup Language*，超文本编辑语言), 是一种用来告诉浏览器如何组织页面的*标记语言*
 
 # 1. HTML元素
 
