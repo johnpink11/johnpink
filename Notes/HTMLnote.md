@@ -129,3 +129,13 @@ The description is also used on search engine result pages.
 	- This sets the title of the page, which is the title that appears in the browser tab the pang is loaded in.
 - `<body></body>`
 	- This contains *all* the content that displays on the page.
+
+
+# 2. Adding custon icons to site
+
+1. Saving an image in the same directory as the site's index page, saved in `.ico` format.
+2. Add the following line into your HTML's `head` block to reference it:
+
+```HTML
+<link ref="icon" href="favicon.con" type="image/x-icon" />
+```
