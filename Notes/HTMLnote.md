@@ -137,5 +137,5 @@ The description is also used on search engine result pages.
 2. Add the following line into your HTML's `head` block to reference it:
 
 ```HTML
-<link ref="icon" href="favicon.con" type="image/x-icon" />
+<link rel="icon" href="favicon.con" type="image/x-icon" />
 ```
