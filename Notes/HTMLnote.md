@@ -139,3 +139,9 @@ The description is also used on search engine result pages.
 ```HTML
 <link rel="icon" href="favicon.con" type="image/x-icon" />
 ```
+
+# Applying CSS and JavaScript to HTML
+
+CSS and JavaScript are applied to a web page using `<link>` and `<script>` element.
+
+- The `<link>` element should always go inside the head of the document.
