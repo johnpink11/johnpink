@@ -114,6 +114,17 @@ The follow is a sample of a HTML page.
 	- This includes keywords and a page description that would appear in search results, CSS to style content, character set declaration, and more.
 - `<meta charset="utf-8">`
 	- This element specifies the character encoding for your document as UTF-8.
+  
+`<meta>` can define your page's author and provide a brief description of your page. For example
+
+```HTML
+<meta name="author" content="Chris Mills" />
+<meta 
+  name="description"
+  content="The MDN Web Docs Learning Area aims to provide complete beginners to the Web with all they need to know to get started with debeloping web sites and applications." />
+```
+The description is also used on search engine result pages.
+
 - `<title></title>`
 	- This sets the title of the page, which is the title that appears in the browser tab the pang is loaded in.
 - `<body></body>`
