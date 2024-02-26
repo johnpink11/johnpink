@@ -144,4 +144,4 @@ The description is also used on search engine result pages.
 
 CSS and JavaScript are applied to a web page using `<link>` and `<script>` element.
 
-- The `<link>` element should always go inside the head of the document.
+- The `<link>` element should always go inside the head of the document. 
