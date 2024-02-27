@@ -1,3 +1,8 @@
+---
+layout: page
+title: Database
+permalink: /Notes/database
+---
 
 ## 课程资源
 
