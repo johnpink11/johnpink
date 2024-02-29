@@ -6,8 +6,8 @@ permalink: /Notes/database
 
 ## 课程资源
 
-- CMU数据库公开课 <a href="https://15445.courses.cs.cmu.edu/fall2023/">卡内基梅隆大学在线课程</a>
-- 数据库人大在线课程 <a href="https://www.bilibili.com/video/BV13J411J7Vu/?spm_id_from=333.337.search-card.all.click&vd_source=4be0987894a647cbab47f2ec1f41fffc">人大数据库课程</a>
+- CMU数据库公开课 <a href="https://15445.courses.cs.cmu.edu/fall2023/" target="_blank">卡内基梅隆大学在线课程</a>
+- 数据库人大在线课程 <a href="https://www.bilibili.com/video/BV13J411J7Vu/?spm_id_from=333.337.search-card.all.click&vd_source=4be0987894a647cbab47f2ec1f41fffc" target="_blank">人大数据库课程</a>
 
 ### 教材和参考资料
 
