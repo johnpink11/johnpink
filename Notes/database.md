@@ -5,7 +5,7 @@
 ### 教材和参考资料
 - 《数据库系统概论》(第6版) ---- 主要教材
 - Database System Concepts (Abraham Silberschatz, Henry Korth, S. Sudarshan) ---- CMU参考教材
-#### 成绩组成
+### 成绩组成
 - 期末考试
 - 平时成绩
 
