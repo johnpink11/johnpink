@@ -1,0 +1,8 @@
+h1 {
+    border: 2px solid rgb(109, 15, 143);
+    padding: 2px;
+}
+
+#introPara {
+    font: normal bold 12px/30px Sans-serif;
+}
