@@ -20,7 +20,7 @@
 
 title: JohnPink's Blog
 email: jixuezhanggg@gmail.com
-description: >- Create what you want!
+description: Create what you want!
 domain: johnpink.github.io
 baseurl:  /johnpink.github.io # the subpath of your site, e.g. /blog
 url: https://johnpink11.github.io/johnpink.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
